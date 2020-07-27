@@ -47,3 +47,60 @@ div > h2 {
 #About-our-Pizza {
     color: forestgreen;
 }
+
+#menubody {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+#menu {
+    display: grid;
+    width: 100%;
+    min-height: 50vh;
+    justify-items: center;
+    row-gap: 20px;
+}
+
+.items {
+    /* width: 100%;
+    height: 100px;
+    display: grid;
+    justify-items: center; */
+}
+
+@keyframes Animation1 {
+    0% {color: blue;}
+    100% {color: red;}
+}
+
+.items:hover {
+    animation-name: Animation1;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes Animation2 {
+    0% {font-size: x-large;}
+    100% {font-size: xx-large;}
+}
+
+#menuhead:hover {
+    animation-name: Animation2;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes Animation3 {
+    0% {color: turquoise; font-style: normal;}
+    50% {color: tomato;}
+    100% {color: turquoise; font-style: italic;}
+}
+
+#Anim3:hover {
+    animation-name: Animation3;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+}
