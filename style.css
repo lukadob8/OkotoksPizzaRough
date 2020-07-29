@@ -104,3 +104,42 @@ div > h2 {
     animation-duration: 4s;
     animation-timing-function: ease-in-out;
 }
+
+@media only screen and (min-width: 600px) {
+    #menubody {
+        background-color: lightblue;
+        font-style: oblique;
+        color: tomato;
+    }
+
+    .FirstC {
+        font-style: normal;
+        color: tomato;
+    }
+
+    #menuhead {
+        color: tomato;
+    }
+}
+
+#CheeseP {
+    display: none;
+}
+
+@media only screen and (min-width: 1000px) {
+    #menubody {
+        background-color: lightpink;
+        font-style: normal;
+        color: cornflowerblue;
+    }
+
+    .FirstC {
+        font-style: italic;
+        color: blue;
+    }
+
+    #CheeseP {
+        display: inline-block;
+    }
+}
+
