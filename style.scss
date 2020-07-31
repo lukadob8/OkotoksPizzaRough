@@ -1,0 +1,171 @@
+@import 'variables';
+
+body h1 {
+    color: tomato;
+}
+
+body > h2 {
+    color: turquoise;
+}
+
+h1 + p {
+    font-style: italic;
+}
+
+a:link {
+    color: blue;
+}
+
+a:visited {
+    color: tomato;
+}
+
+a:hover {
+    color: green;
+}
+
+a:active {
+    color: blue;
+}
+
+img:hover {
+    transform: rotate(180deg);
+}
+
+#First:hover {
+    transform: rotate(180deg);
+    display: inline-block;
+}
+
+.FirstC {
+    font-family: fantasy;
+    font-style: italic;
+}
+
+div > h2 {
+    color: turquoise;
+}
+
+#About-our-Pizza {
+    color: forestgreen;
+}
+
+#menubody {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+#menu {
+    display: grid;
+    width: 100%;
+    min-height: 50vh;
+    justify-items: center;
+    row-gap: 20px;
+}
+
+.items {
+    /* width: 100%;
+    height: 100px;
+    display: grid;
+    justify-items: center; */
+}
+
+@keyframes Animation1 {
+    0% {color: blue;}
+    100% {color: red;}
+}
+
+.items:hover {
+    animation-name: Animation1;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes Animation2 {
+    0% {font-size: x-large;}
+    100% {font-size: xx-large;}
+}
+
+#menuhead:hover {
+    animation-name: Animation2;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes Animation3 {
+    0% {color: turquoise; font-style: normal;}
+    50% {color: tomato;}
+    100% {color: turquoise; font-style: italic;}
+}
+
+#Anim3:hover {
+    animation-name: Animation3;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+}
+
+@media only screen and (min-width: 600px) {
+    #menubody {
+        background-color: lightblue;
+        font-style: oblique;
+        color: tomato;
+    }
+
+    .FirstC {
+        font-style: normal;
+        color: tomato;
+    }
+
+    #menuhead {
+        color: tomato;
+    }
+}
+
+#CheeseP {
+    display: none;
+}
+
+@media only screen and (min-width: 1000px) {
+    #menubody {
+        background-color: lightpink;
+        font-style: normal;
+        color: cornflowerblue;
+    }
+
+    .FirstC {
+        font-style: italic;
+        color: $color1;
+    }
+
+    #CheeseP {
+        display: inline-block;
+        &:hover {
+            @include imgAnim ();
+        }
+    }
+}
+
+#body1 {
+    background-color: paleturquoise;
+
+    .Link {
+        font-style: italic;
+        &:hover {
+            @include boxshadow ();
+        }
+    }
+}
+
+.items {
+    color: $color1;
+}
+
+.FirstC {
+    &:hover {
+        @include boxshadow ();
+        color: $color2;
+    }
+}
